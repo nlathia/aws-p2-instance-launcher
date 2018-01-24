@@ -2,7 +2,7 @@
 
 This project is based on the [setup_instance.sh](https://github.com/fastai/courses/blob/master/setup/setup_instance.sh) that is part of the first [fast.ai](http://course.fast.ai/) course. The wiki page for the original instructions is [here](http://wiki.fast.ai/index.php/AWS_install).
 
-There are a few differences:
+### Differences
 
 1. The original script configures AWS to use a `default` profile. This command line tool allows you to launch an instance under any AWS profile that is configured on your system.
 2. The original script creates a number of required things (e.g., a VPC, a route table, etc.). This tool is idempotent; it checks for the existence of those components and does not create them if they exist.
