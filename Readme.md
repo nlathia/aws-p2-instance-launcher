@@ -29,8 +29,8 @@ $ ./launch.sh <profile-name>
 Where `<profile-name>` is the profile you created when configuring your AWS CLI (leave blank to use the `default` profile). 
 
 By default:
-* `<name>` is set to `gpu-machine` for `p2.xlarge` instances, `test-machine` otherwise.
-* `<istance-type>` is set to `p2.xlarge`
+* `<name>` (used below) is set to `gpu-machine` for `p2.xlarge` instances, `test-machine` otherwise.
+* `<instance-type>` is set to `p2.xlarge`
 
 This will produce files like this:
 * `<name>-connect.sh` to connect to your instance.
