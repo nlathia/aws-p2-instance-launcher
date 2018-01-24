@@ -6,7 +6,7 @@ There are a few differences:
 
 1. The original script configures AWS to use a `default` profile. This command line tool allows you to launch an instance under any AWS profile that is configured on your system.
 2. The original script creates a number of required things (e.g., a VPC, a route table, etc.). This tool is idempotent; it checks for the existence of those components and does not create them if they exist.
-3. I've set it to use an []Amazon Linux Conda AMI](https://aws.amazon.com/marketplace/pp/B077GF11NF) in `eu-west-1`.
+3. I've set it to use an [Amazon Linux Conda AMI](https://aws.amazon.com/marketplace/pp/B077GF11NF) in `eu-west-1`.
 
 ### Limitations
 
