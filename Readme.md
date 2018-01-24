@@ -12,6 +12,7 @@ There are a few differences:
 
 * This tool does not currently launch a Jupyter notebook on the instance.
 * There are a variety of other `TODO`s in the code.
+* Not everything has been thoroughly tested.
 
 ## Create the Instance
 
