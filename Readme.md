@@ -23,7 +23,7 @@ If you are running this for the first time, make sure you have completed the [on
 To launch an instance, type:
 
 ```bash
-$ ./setup_p2.sh <profile-name>
+$ ./launch.sh <profile-name>
 ```
 
 Where `<profile-name>` is the profile you created when configuring your AWS CLI (leave blank to use the `default` profile). 
