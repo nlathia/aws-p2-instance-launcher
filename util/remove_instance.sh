@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "Terminating instance..."
 aws ec2 terminate-instances --instance-ids $instanceId
 aws ec2 wait instance-terminated --instance-ids $instanceId
