@@ -1,5 +1,7 @@
 # Launch a p2.xlarge instance on AWS
 
+### Inspiration
+
 This project is based on the [setup_instance.sh](https://github.com/fastai/courses/blob/master/setup/setup_instance.sh) that is part of the first [fast.ai](http://course.fast.ai/) course. The wiki page for the original instructions is [here](http://wiki.fast.ai/index.php/AWS_install).
 
 ### Differences
