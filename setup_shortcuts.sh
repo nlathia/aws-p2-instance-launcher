@@ -10,13 +10,13 @@
 function writeConnectionShortcuts {
     output="$1-connect.sh"
     echo "#!/bin/bash" > "$output"
-    echo "\# Connect to your instance:" >> "$output"
+    echo "# Connect to your instance:" >> "$output"
     echo "ssh -i ~/.ssh/$2 ec2-user@$3" >> "$output"
     echo "" >> "$output"
 
     output="$1-sftp.sh"
     echo "#!/bin/bash" > "$output"
-    echo "\# FTP to your instance:" >> "$output"
+    echo "# FTP to your instance:" >> "$output"
     echo "sftp -i ~/.ssh/$2 ec2-user@$3" >> "$output"
     echo "" >> "$output"
 }
@@ -42,7 +42,6 @@ function writeStateShortcuts {
     output="$1-reboot.sh"
     echo "#!/bin/bash" > "$output"
     echo "# Reboot your instance:" >> "$output"
-    echo ". $(dirname "$0")/"$output"" >> "$output"
     echo "aws ec2 reboot-instances --instance-ids $2"  >> "$output"
 }
 
@@ -55,8 +54,8 @@ function writeUninstall {
     output="$1-uninstall.sh"
     echo "#!/bin/bash" > "$output"
     echo "# Remove everything:" > "$output"
-    echo "export AWS_PROFILE=$2" >> "$output"
 
+    echo "export AWS_PROFILE=$2" >> "$output"
     echo "instanceId=$3" >> "$output"
     echo "securityGroupId=$4" >> "$output"
     echo "assocId=$5" >> "$output"
